@@ -1,0 +1,135 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body
+{
+    margin-top:10px ;
+    font-family: 'Tajawal', sans-serif;
+}
+#hideAll
+{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: white;
+    z-index: 99; /* Higher than anything else in the document */
+
+}
+
+
+/*start header*/
+#main-header
+{
+    margin-top:10px ;
+
+}
+
+.front-view
+{
+    position: relative;
+    background-image: url("../Images/medical-equipment-4099429_1280.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0 ;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8,128,179, .3);
+}
+.main-view
+{
+    padding-top: 30vmin;
+}
+.moving-bar
+{
+
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    left: 0;
+    padding: 10px;
+}
+.moving-bar p
+{
+    margin:0;
+}
+/*start main*/
+main section
+{
+    padding: 25px 0;
+    text-align: center;
+}
+
+.colored-sec
+{
+    background-color: #17a2b8;
+    color:#f8f9fa;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 250px;
+}
+.sec-title
+{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.custom-icon
+{
+    font-size: 100px;
+}
+.regular-sec
+{
+    color: #17a2b8 ;
+
+}
+.regular-sec p
+{
+    /*text-align: right;*/
+    font-size: 2.7em;
+    font-weight: 300;
+}
+#sec2
+{
+
+    background-image: url("../Images/design1.png");
+
+    background-position: bottom;
+}
+#sec4
+{
+    background-image: url("../Images/design2.png");
+    background-repeat: repeat-y;
+}
+#sec6
+{
+    background-image: url("../Images/design3.png");
+    background-repeat: repeat-y;
+}
+
+#sec8
+{
+    background-image: url("../Images/design4.png");
+}
+/*end main*/
+/*start media query*/
+@media only screen and (min-width: 768px) {
+    .main-view
+    {
+        padding-top: 40vh;
+    }
+}
+/*end media query*/
